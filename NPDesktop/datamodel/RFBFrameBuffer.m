@@ -30,64 +30,67 @@
     return self;
 }
 
-- (void)drawRect:(CGRect)rect context:(CGContextRef)ctx
+- (CGImageRef)createImageFromValidRect:(CGRect)rect
 {
-//    DLogInfo(@"\nx=%f, y=%f, w=%f, h=%f", rect.origin.x, rect.origin.y, rect.size.width, rect.size.height);
-    
     int bytesPerPixel = (pixelFormat.bitsPerPixel + 7) >> 3;
-    
-    CGContextTranslateCTM(ctx, 0, _size.height);
-    CGContextScaleCTM(ctx, 1.0, -1.0);
-    
-    CGRect trect = rect;
-    CGFloat w = trect.size.width;
-    CGFloat h = trect.size.height;
-    if (w > _size.width) {
-        w = _size.width;
-    }
-    
-    if (h > _size.height) {
-        h = _size.height;
-    }
-    
-    trect = CGRectMake(trect.origin.x, trect.origin.y, w, h);
-    trect.origin.y = (CGFloat)_size.height - trect.size.height - trect.origin.y;
-    
+
     // FIXME: rect origin can be negative?
     uint32_t *start = (uint32_t *)_buffer.bytes + (int)(rect.origin.y * _size.width) + (int)rect.origin.x;
     int bytesPerRow = _size.width * bytesPerPixel;
     
     CGColorSpaceRef cs = CGColorSpaceCreateDeviceRGB();
-    CGContextRef bmpctx = CGBitmapContextCreate(start, trect.size.width, trect.size.height, 8, bytesPerRow, cs, kCGImageAlphaNoneSkipFirst);
+    CGContextRef bmpctx = CGBitmapContextCreate(start, rect.size.width, rect.size.height, 8, bytesPerRow, cs, kCGImageAlphaNoneSkipFirst);
     CGImageRef image = CGBitmapContextCreateImage(bmpctx);
     
-    CGContextDrawImage(ctx, trect, image);
-    
-    CGImageRelease(image);
     CGColorSpaceRelease(cs);
     CGContextRelease(bmpctx);
+  
+    return image;
+}
+
+- (void)drawCGImage:(CGImageRef)image context:(CGContextRef)ctx
+{
+    CGContextSaveGState(ctx);
+    
+    CGFloat imageHeight = CGImageGetHeight(image);
+    CGFloat imageWidth = CGImageGetWidth(image);
+    
+    CGContextTranslateCTM(ctx, 0, imageHeight);
+    CGContextScaleCTM(ctx, 1.0, -1.0);
+    
+    CGContextDrawImage(ctx, CGRectMake(0, 0, imageWidth, imageHeight), image);
+ 
+    CGContextRestoreGState(ctx);
+}
+
+- (void)drawRect:(CGRect)rect fromPoint:(CGPoint)dstOrigin context:(CGContextRef)ctx
+{
+    //    DLogInfo(@"\nx=%f, y=%f, w=%f, h=%f", rect.origin.x, rect.origin.y, rect.size.width, rect.size.height);
+    CGContextSaveGState(ctx);
+    
+    CGRect trect = rect;
+    trect.size.width = MIN(trect.size.width, _size.width);
+    trect.size.height = MIN(trect.size.height, _size.height);
+    
+    CGImageRef image = [self createImageFromValidRect:trect];
+    
+    CGContextTranslateCTM(ctx, dstOrigin.x, dstOrigin.y);
+    [self drawCGImage:image context:ctx];
+    
+    CGImageRelease(image);
+    CGContextRestoreGState(ctx);
+
+}
+
+- (void)drawRect:(CGRect)rect context:(CGContextRef)ctx
+{
+    [self drawRect:rect fromPoint:rect.origin context:ctx];
 }
 
 - (void)drawFullInRect:(CGRect)rect context:(CGContextRef)ctx
 {
-    int bytesPerPixel = (pixelFormat.bitsPerPixel + 7) >> 3;
-    
-    CGContextTranslateCTM(ctx, 0, _size.height);
-    CGContextScaleCTM(ctx, 1.0, -1.0);
-    
-    // FIXME: rect origin can be negative?
-    uint32_t *start = (uint32_t *)_buffer.bytes;
-    int bytesPerRow = _size.width * bytesPerPixel;
-    
-    CGColorSpaceRef cs = CGColorSpaceCreateDeviceRGB();
-    CGContextRef bmpctx = CGBitmapContextCreate(start, self.size.width, self.size.height, 8, bytesPerRow, cs, kCGImageAlphaNoneSkipFirst);
-    CGImageRef image = CGBitmapContextCreateImage(bmpctx);
-    
-    CGContextDrawImage(ctx, rect, image);
-    
-    CGImageRelease(image);
-    CGColorSpaceRelease(cs);
-    CGContextRelease(bmpctx);
+    CGRect fullRect = (CGRect){.origin = CGPointZero, .size = _size};
+    [self drawRect:fullRect fromPoint:CGPointZero context:ctx];
 }
 
 - (void)fillRect:(CGRect)rect withData:(NSData *)data

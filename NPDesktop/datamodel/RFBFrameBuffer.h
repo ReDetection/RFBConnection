@@ -27,6 +27,7 @@
 
 // draw a rect of data
 - (void)drawRect:(CGRect)rect context:(CGContextRef)ctx;
+- (void)drawRect:(CGRect)rect fromPoint:(CGPoint)dstOrigin context:(CGContextRef)ctx;
 
 // flush the framebuffer into target rect
 - (void)drawFullInRect:(CGRect)rect context:(CGContextRef)ctx;
