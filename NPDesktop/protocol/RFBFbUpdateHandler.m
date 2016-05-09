@@ -84,7 +84,7 @@
         
         // Uncomment this line if you want to update the screen rect by rect. You really
         // do not want that, I am sure.
-//        [connection.delegate connection:connection shouldInvalidateRect:[value CGRectValue]];
+        [connection.delegate connection:connection shouldInvalidateRect:[value CGRectValue]];
         
         if (_numRectReceived == _message.nRects) {
             [self complete:connection];
