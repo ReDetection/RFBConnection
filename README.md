@@ -1,11 +1,11 @@
-NPDesktop
+RFBConnection
 =========
 
-An VNC client on iPad which supports Raw, CopyRect and Tight encoding.
+VNC client library for iOS which supports Raw, CopyRect and Tight encoding. Extracted from NPDesktop project to play with [Heroes III iOS VNC Client](https://github.com/ReDetection/HeroesClient)
 
 ---
 
-Features supported:
+Example project features:
 
 * Raw, CopyRect and Tight encoding;
 * Pan and zoom of the desktop view with gestures;
@@ -15,4 +15,15 @@ Features supported:
 
 ---
 
-### Contributions to support more features are welcome!
+TODO
+====
+
+There are plenty of things which are nice to have, some noted below:
+
+ - [ ] move libjpeg and GCDAsyncSocket to actual dependencies
+ - [ ] support 16-bit pixel format 
+ - [ ] refactor: decouple rfb message handlers
+
+
+
+### Contributions are welcome!
