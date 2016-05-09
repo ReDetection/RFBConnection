@@ -74,7 +74,7 @@
     
     CGImageRef image = [self createImageFromValidRect:trect];
     
-    CGContextTranslateCTM(ctx, dstOrigin.x, dstOrigin.y);
+    CGContextTranslateCTM(ctx, dstOrigin.x, -dstOrigin.y);
     [self drawCGImage:image context:ctx];
     
     CGImageRelease(image);
