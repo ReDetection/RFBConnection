@@ -20,7 +20,6 @@ TODO
 
 There are plenty of things which are nice to have, some noted below:
 
- - [ ] move libjpeg and GCDAsyncSocket to actual dependencies
  - [ ] support 16-bit pixel format 
  - [ ] refactor: decouple rfb message handlers
  - [ ] reuse RFBFramebufferedConnection in the example
