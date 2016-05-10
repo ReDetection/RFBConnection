@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'RFBConnection'
-  spec.version      = '0.1.1'
+  spec.version      = '0.1.2'
   spec.license      = { :type => 'MIT' }
   spec.homepage     = 'https://github.com/ReDetection/RFBConnection'
   spec.authors      = { 'Liu Leon' => 'liu.l.leon@gmail.com' }
