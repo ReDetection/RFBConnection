@@ -8,9 +8,9 @@ Pod::Spec.new do |spec|
 
   spec.platform = :ios, '6.0'
   spec.source       = { :git => 'https://github.com/ReDetection/RFBConnection.git', :tag => "#{spec.version}" }
-  spec.source_files = 'NPDesktop/{3rdparty,datamodel,jpeg,protocol,utilities}/*.{h,m,c}'
+  spec.source_files = 'NPDesktop/{3rdparty,datamodel,protocol,utilities}/*.{h,m,c}'
   spec.prefix_header_file = 'NPDesktop/NPDesktop-Prefix.pch'
 
+  spec.dependency 'DFJPEGTurbo', '~> 0.2.1'
   spec.libraries = 'z'
-  spec.vendored_libraries = 'libjpeg.a'
 end
