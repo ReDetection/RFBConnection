@@ -7,14 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35864FD3175C7AF900C14D4B /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864F71175C7AF900C14D4B /* GCDAsyncSocket.m */; };
-		35864FD4175C7AF900C14D4B /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864F73175C7AF900C14D4B /* GCDAsyncUdpSocket.m */; };
 		35864FD5175C7AF900C14D4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864F75175C7AF900C14D4B /* AppDelegate.m */; };
-		35864FD6175C7AF900C14D4B /* RFBConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864F79175C7AF900C14D4B /* RFBConnection.m */; };
-		35864FD7175C7AF900C14D4B /* RFBFrameBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864F7B175C7AF900C14D4B /* RFBFrameBuffer.m */; };
-		35864FD8175C7AF900C14D4B /* RFBRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864F7D175C7AF900C14D4B /* RFBRect.m */; };
-		35864FD9175C7AF900C14D4B /* RFBServerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864F7F175C7AF900C14D4B /* RFBServerData.m */; };
-		35864FDA175C7AF900C14D4B /* RFBServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864F81175C7AF900C14D4B /* RFBServerManager.m */; };
 		35864FDB175C7AF900C14D4B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35864F82175C7AF900C14D4B /* Default-568h@2x.png */; };
 		35864FDC175C7AF900C14D4B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 35864F83175C7AF900C14D4B /* Default.png */; };
 		35864FDD175C7AF900C14D4B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35864F84175C7AF900C14D4B /* Default@2x.png */; };
@@ -22,25 +15,6 @@
 		35864FDF175C7AF900C14D4B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35864F87175C7AF900C14D4B /* ViewController.xib */; };
 		35864FE0175C7AF900C14D4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864F8F175C7AF900C14D4B /* main.m */; };
 		35864FE2175C7AF900C14D4B /* desk.png in Resources */ = {isa = PBXBuildFile; fileRef = 35864F93175C7AF900C14D4B /* desk.png */; };
-		35864FEB175C7AF900C14D4B /* CompressLevelPseudoDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864F9E175C7AF900C14D4B /* CompressLevelPseudoDecoder.m */; };
-		35864FEC175C7AF900C14D4B /* JpegDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864FA0175C7AF900C14D4B /* JpegDecompressor.m */; };
-		35864FED175C7AF900C14D4B /* QualityLevelPseudoDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864FA2175C7AF900C14D4B /* QualityLevelPseudoDecoder.m */; };
-		35864FEE175C7AF900C14D4B /* RFBCopyRectDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864FA4175C7AF900C14D4B /* RFBCopyRectDecoder.m */; };
-		35864FEF175C7AF900C14D4B /* RFBDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864FA6175C7AF900C14D4B /* RFBDecoder.m */; };
-		35864FF0175C7AF900C14D4B /* RFBDecoderStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864FA8175C7AF900C14D4B /* RFBDecoderStore.m */; };
-		35864FF1175C7AF900C14D4B /* RFBFbUpdateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864FAA175C7AF900C14D4B /* RFBFbUpdateHandler.m */; };
-		35864FF2175C7AF900C14D4B /* RFBHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864FAC175C7AF900C14D4B /* RFBHandler.m */; };
-		35864FF3175C7AF900C14D4B /* RFBHandshaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864FAE175C7AF900C14D4B /* RFBHandshaker.m */; };
-		35864FF4175C7AF900C14D4B /* RFBInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864FB0175C7AF900C14D4B /* RFBInitializer.m */; };
-		35864FF5175C7AF900C14D4B /* RFBMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864FB2175C7AF900C14D4B /* RFBMessageHandler.m */; };
-		35864FF6175C7AF900C14D4B /* RFBRawDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864FB5175C7AF900C14D4B /* RFBRawDecoder.m */; };
-		35864FF7175C7AF900C14D4B /* RFBTightDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864FB7175C7AF900C14D4B /* RFBTightDecoder.m */; };
-		35864FF8175C7AF900C14D4B /* ZlibInflater.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864FB9175C7AF900C14D4B /* ZlibInflater.m */; };
-		35864FF9175C7AF900C14D4B /* d3des.c in Sources */ = {isa = PBXBuildFile; fileRef = 35864FBB175C7AF900C14D4B /* d3des.c */; };
-		35864FFA175C7AF900C14D4B /* KeyMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864FBE175C7AF900C14D4B /* KeyMap.m */; };
-		35864FFB175C7AF900C14D4B /* Profiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864FC1175C7AF900C14D4B /* Profiler.m */; };
-		35864FFC175C7AF900C14D4B /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864FC3175C7AF900C14D4B /* Utility.m */; };
-		35864FFD175C7AF900C14D4B /* vncauth.c in Sources */ = {isa = PBXBuildFile; fileRef = 35864FC4175C7AF900C14D4B /* vncauth.c */; };
 		35864FFE175C7AF900C14D4B /* RFBScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864FC8175C7AF900C14D4B /* RFBScrollView.m */; };
 		35864FFF175C7AF900C14D4B /* RFBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864FCA175C7AF900C14D4B /* RFBView.m */; };
 		35865000175C7AF900C14D4B /* RFBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35864FCC175C7AF900C14D4B /* RFBViewController.m */; };
@@ -57,83 +31,25 @@
 		35D7D41816DF4222000A60F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D7D41716DF4222000A60F5 /* CoreGraphics.framework */; };
 		35D7D45D16DF44BB000A60F5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D7D45C16DF44BB000A60F5 /* Security.framework */; };
 		35D7D46016DF453C000A60F5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D7D45E16DF44C6000A60F5 /* CFNetwork.framework */; };
-		35DE421B17018A8400464A98 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DE421A17018A8400464A98 /* libz.dylib */; };
-		35E8B58C16FC0089000EB20F /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E8B58B16FC0089000EB20F /* libjpeg.a */; };
 		35EAD8E216FAA08900B04BD0 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EAD8E116FAA08900B04BD0 /* Accelerate.framework */; };
 		35FD6D0C16ED6C020034AC37 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FD6D0B16ED6C020034AC37 /* QuartzCore.framework */; };
+		9CB61FD6F628508284CDC96B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1F1005B4D51DB81081DDF0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		35864F70175C7AF900C14D4B /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
-		35864F71175C7AF900C14D4B /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
-		35864F72175C7AF900C14D4B /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
-		35864F73175C7AF900C14D4B /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		06BCDAE8D96CFA724EDBC128 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		2A1F1005B4D51DB81081DDF0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		35864F74175C7AF900C14D4B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		35864F75175C7AF900C14D4B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		35864F78175C7AF900C14D4B /* RFBConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBConnection.h; sourceTree = "<group>"; };
-		35864F79175C7AF900C14D4B /* RFBConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBConnection.m; sourceTree = "<group>"; };
-		35864F7A175C7AF900C14D4B /* RFBFrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBFrameBuffer.h; sourceTree = "<group>"; };
-		35864F7B175C7AF900C14D4B /* RFBFrameBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBFrameBuffer.m; sourceTree = "<group>"; };
-		35864F7C175C7AF900C14D4B /* RFBRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBRect.h; sourceTree = "<group>"; };
-		35864F7D175C7AF900C14D4B /* RFBRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBRect.m; sourceTree = "<group>"; };
-		35864F7E175C7AF900C14D4B /* RFBServerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBServerData.h; sourceTree = "<group>"; };
-		35864F7F175C7AF900C14D4B /* RFBServerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBServerData.m; sourceTree = "<group>"; };
-		35864F80175C7AF900C14D4B /* RFBServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBServerManager.h; sourceTree = "<group>"; };
-		35864F81175C7AF900C14D4B /* RFBServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBServerManager.m; sourceTree = "<group>"; };
 		35864F82175C7AF900C14D4B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		35864F83175C7AF900C14D4B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		35864F84175C7AF900C14D4B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		35864F86175C7AF900C14D4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		35864F88175C7AF900C14D4B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		35864F8A175C7AF900C14D4B /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
-		35864F8B175C7AF900C14D4B /* jerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jerror.h; sourceTree = "<group>"; };
-		35864F8C175C7AF900C14D4B /* jmorecfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jmorecfg.h; sourceTree = "<group>"; };
-		35864F8D175C7AF900C14D4B /* jpeglib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpeglib.h; sourceTree = "<group>"; };
-		35864F8E175C7AF900C14D4B /* turbojpeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = turbojpeg.h; sourceTree = "<group>"; };
 		35864F8F175C7AF900C14D4B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35864F90175C7AF900C14D4B /* NPDesktop-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NPDesktop-Info.plist"; sourceTree = "<group>"; };
 		35864F91175C7AF900C14D4B /* NPDesktop-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NPDesktop-Prefix.pch"; sourceTree = "<group>"; };
 		35864F93175C7AF900C14D4B /* desk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = desk.png; sourceTree = "<group>"; };
-		35864F9D175C7AF900C14D4B /* CompressLevelPseudoDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompressLevelPseudoDecoder.h; sourceTree = "<group>"; };
-		35864F9E175C7AF900C14D4B /* CompressLevelPseudoDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompressLevelPseudoDecoder.m; sourceTree = "<group>"; };
-		35864F9F175C7AF900C14D4B /* JpegDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpegDecompressor.h; sourceTree = "<group>"; };
-		35864FA0175C7AF900C14D4B /* JpegDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpegDecompressor.m; sourceTree = "<group>"; };
-		35864FA1175C7AF900C14D4B /* QualityLevelPseudoDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QualityLevelPseudoDecoder.h; sourceTree = "<group>"; };
-		35864FA2175C7AF900C14D4B /* QualityLevelPseudoDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QualityLevelPseudoDecoder.m; sourceTree = "<group>"; };
-		35864FA3175C7AF900C14D4B /* RFBCopyRectDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBCopyRectDecoder.h; sourceTree = "<group>"; };
-		35864FA4175C7AF900C14D4B /* RFBCopyRectDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBCopyRectDecoder.m; sourceTree = "<group>"; };
-		35864FA5175C7AF900C14D4B /* RFBDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBDecoder.h; sourceTree = "<group>"; };
-		35864FA6175C7AF900C14D4B /* RFBDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBDecoder.m; sourceTree = "<group>"; };
-		35864FA7175C7AF900C14D4B /* RFBDecoderStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBDecoderStore.h; sourceTree = "<group>"; };
-		35864FA8175C7AF900C14D4B /* RFBDecoderStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBDecoderStore.m; sourceTree = "<group>"; };
-		35864FA9175C7AF900C14D4B /* RFBFbUpdateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBFbUpdateHandler.h; sourceTree = "<group>"; };
-		35864FAA175C7AF900C14D4B /* RFBFbUpdateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBFbUpdateHandler.m; sourceTree = "<group>"; };
-		35864FAB175C7AF900C14D4B /* RFBHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBHandler.h; sourceTree = "<group>"; };
-		35864FAC175C7AF900C14D4B /* RFBHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBHandler.m; sourceTree = "<group>"; };
-		35864FAD175C7AF900C14D4B /* RFBHandshaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBHandshaker.h; sourceTree = "<group>"; };
-		35864FAE175C7AF900C14D4B /* RFBHandshaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBHandshaker.m; sourceTree = "<group>"; };
-		35864FAF175C7AF900C14D4B /* RFBInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBInitializer.h; sourceTree = "<group>"; };
-		35864FB0175C7AF900C14D4B /* RFBInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBInitializer.m; sourceTree = "<group>"; };
-		35864FB1175C7AF900C14D4B /* RFBMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBMessageHandler.h; sourceTree = "<group>"; };
-		35864FB2175C7AF900C14D4B /* RFBMessageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBMessageHandler.m; sourceTree = "<group>"; };
-		35864FB3175C7AF900C14D4B /* rfbproto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rfbproto.h; sourceTree = "<group>"; };
-		35864FB4175C7AF900C14D4B /* RFBRawDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBRawDecoder.h; sourceTree = "<group>"; };
-		35864FB5175C7AF900C14D4B /* RFBRawDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBRawDecoder.m; sourceTree = "<group>"; };
-		35864FB6175C7AF900C14D4B /* RFBTightDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBTightDecoder.h; sourceTree = "<group>"; };
-		35864FB7175C7AF900C14D4B /* RFBTightDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBTightDecoder.m; sourceTree = "<group>"; };
-		35864FB8175C7AF900C14D4B /* ZlibInflater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZlibInflater.h; sourceTree = "<group>"; };
-		35864FB9175C7AF900C14D4B /* ZlibInflater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZlibInflater.m; sourceTree = "<group>"; };
-		35864FBB175C7AF900C14D4B /* d3des.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = d3des.c; sourceTree = "<group>"; };
-		35864FBC175C7AF900C14D4B /* d3des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = d3des.h; sourceTree = "<group>"; };
-		35864FBD175C7AF900C14D4B /* KeyMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyMap.h; sourceTree = "<group>"; };
-		35864FBE175C7AF900C14D4B /* KeyMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyMap.m; sourceTree = "<group>"; };
-		35864FBF175C7AF900C14D4B /* keysymdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keysymdef.h; sourceTree = "<group>"; };
-		35864FC0175C7AF900C14D4B /* Profiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profiler.h; sourceTree = "<group>"; };
-		35864FC1175C7AF900C14D4B /* Profiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profiler.m; sourceTree = "<group>"; };
-		35864FC2175C7AF900C14D4B /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
-		35864FC3175C7AF900C14D4B /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
-		35864FC4175C7AF900C14D4B /* vncauth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vncauth.c; sourceTree = "<group>"; };
-		35864FC5175C7AF900C14D4B /* vncauth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vncauth.h; sourceTree = "<group>"; };
 		35864FC7175C7AF900C14D4B /* RFBScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBScrollView.h; sourceTree = "<group>"; };
 		35864FC8175C7AF900C14D4B /* RFBScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBScrollView.m; sourceTree = "<group>"; };
 		35864FC9175C7AF900C14D4B /* RFBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBView.h; sourceTree = "<group>"; };
@@ -161,6 +77,7 @@
 		35E8B58B16FC0089000EB20F /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
 		35EAD8E116FAA08900B04BD0 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		35FD6D0B16ED6C020034AC37 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C43F92DBEB77CC3BEC5AF554 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35DE421B17018A8400464A98 /* libz.dylib in Frameworks */,
 				35EAD8E216FAA08900B04BD0 /* Accelerate.framework in Frameworks */,
 				35FD6D0C16ED6C020034AC37 /* QuartzCore.framework in Frameworks */,
 				35D7D46016DF453C000A60F5 /* CFNetwork.framework in Frameworks */,
@@ -176,7 +92,7 @@
 				35D7D41416DF4222000A60F5 /* UIKit.framework in Frameworks */,
 				35D7D41616DF4222000A60F5 /* Foundation.framework in Frameworks */,
 				35D7D41816DF4222000A60F5 /* CoreGraphics.framework in Frameworks */,
-				35E8B58C16FC0089000EB20F /* libjpeg.a in Frameworks */,
+				9CB61FD6F628508284CDC96B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,67 +102,22 @@
 		35864F6E175C7AF900C14D4B /* NPDesktop */ = {
 			isa = PBXGroup;
 			children = (
-				35864F6F175C7AF900C14D4B /* 3rdparty */,
 				35864F74175C7AF900C14D4B /* AppDelegate.h */,
 				35864F75175C7AF900C14D4B /* AppDelegate.m */,
-				35864F77175C7AF900C14D4B /* datamodel */,
 				35864F82175C7AF900C14D4B /* Default-568h@2x.png */,
 				35864F83175C7AF900C14D4B /* Default.png */,
 				35864F84175C7AF900C14D4B /* Default@2x.png */,
 				35864F85175C7AF900C14D4B /* InfoPlist.strings */,
 				35864F87175C7AF900C14D4B /* ViewController.xib */,
-				35864F89175C7AF900C14D4B /* jpeg */,
 				35864F8F175C7AF900C14D4B /* main.m */,
 				35864F90175C7AF900C14D4B /* NPDesktop-Info.plist */,
 				35864F91175C7AF900C14D4B /* NPDesktop-Prefix.pch */,
 				35864F92175C7AF900C14D4B /* png */,
-				35864F9C175C7AF900C14D4B /* protocol */,
-				35864FBA175C7AF900C14D4B /* utilities */,
 				35864FC6175C7AF900C14D4B /* view */,
 				35864FD1175C7AF900C14D4B /* ViewController.h */,
 				35864FD2175C7AF900C14D4B /* ViewController.m */,
 			);
 			path = NPDesktop;
-			sourceTree = "<group>";
-		};
-		35864F6F175C7AF900C14D4B /* 3rdparty */ = {
-			isa = PBXGroup;
-			children = (
-				35864F70175C7AF900C14D4B /* GCDAsyncSocket.h */,
-				35864F71175C7AF900C14D4B /* GCDAsyncSocket.m */,
-				35864F72175C7AF900C14D4B /* GCDAsyncUdpSocket.h */,
-				35864F73175C7AF900C14D4B /* GCDAsyncUdpSocket.m */,
-			);
-			path = 3rdparty;
-			sourceTree = "<group>";
-		};
-		35864F77175C7AF900C14D4B /* datamodel */ = {
-			isa = PBXGroup;
-			children = (
-				35864F78175C7AF900C14D4B /* RFBConnection.h */,
-				35864F79175C7AF900C14D4B /* RFBConnection.m */,
-				35864F7A175C7AF900C14D4B /* RFBFrameBuffer.h */,
-				35864F7B175C7AF900C14D4B /* RFBFrameBuffer.m */,
-				35864F7C175C7AF900C14D4B /* RFBRect.h */,
-				35864F7D175C7AF900C14D4B /* RFBRect.m */,
-				35864F7E175C7AF900C14D4B /* RFBServerData.h */,
-				35864F7F175C7AF900C14D4B /* RFBServerData.m */,
-				35864F80175C7AF900C14D4B /* RFBServerManager.h */,
-				35864F81175C7AF900C14D4B /* RFBServerManager.m */,
-			);
-			path = datamodel;
-			sourceTree = "<group>";
-		};
-		35864F89175C7AF900C14D4B /* jpeg */ = {
-			isa = PBXGroup;
-			children = (
-				35864F8A175C7AF900C14D4B /* jconfig.h */,
-				35864F8B175C7AF900C14D4B /* jerror.h */,
-				35864F8C175C7AF900C14D4B /* jmorecfg.h */,
-				35864F8D175C7AF900C14D4B /* jpeglib.h */,
-				35864F8E175C7AF900C14D4B /* turbojpeg.h */,
-			);
-			path = jpeg;
 			sourceTree = "<group>";
 		};
 		35864F92175C7AF900C14D4B /* png */ = {
@@ -259,60 +130,6 @@
 				35864F93175C7AF900C14D4B /* desk.png */,
 			);
 			path = png;
-			sourceTree = "<group>";
-		};
-		35864F9C175C7AF900C14D4B /* protocol */ = {
-			isa = PBXGroup;
-			children = (
-				35864F9D175C7AF900C14D4B /* CompressLevelPseudoDecoder.h */,
-				35864F9E175C7AF900C14D4B /* CompressLevelPseudoDecoder.m */,
-				35864F9F175C7AF900C14D4B /* JpegDecompressor.h */,
-				35864FA0175C7AF900C14D4B /* JpegDecompressor.m */,
-				35864FA1175C7AF900C14D4B /* QualityLevelPseudoDecoder.h */,
-				35864FA2175C7AF900C14D4B /* QualityLevelPseudoDecoder.m */,
-				35864FA3175C7AF900C14D4B /* RFBCopyRectDecoder.h */,
-				35864FA4175C7AF900C14D4B /* RFBCopyRectDecoder.m */,
-				35864FA5175C7AF900C14D4B /* RFBDecoder.h */,
-				35864FA6175C7AF900C14D4B /* RFBDecoder.m */,
-				35864FA7175C7AF900C14D4B /* RFBDecoderStore.h */,
-				35864FA8175C7AF900C14D4B /* RFBDecoderStore.m */,
-				35864FA9175C7AF900C14D4B /* RFBFbUpdateHandler.h */,
-				35864FAA175C7AF900C14D4B /* RFBFbUpdateHandler.m */,
-				35864FAB175C7AF900C14D4B /* RFBHandler.h */,
-				35864FAC175C7AF900C14D4B /* RFBHandler.m */,
-				35864FAD175C7AF900C14D4B /* RFBHandshaker.h */,
-				35864FAE175C7AF900C14D4B /* RFBHandshaker.m */,
-				35864FAF175C7AF900C14D4B /* RFBInitializer.h */,
-				35864FB0175C7AF900C14D4B /* RFBInitializer.m */,
-				35864FB1175C7AF900C14D4B /* RFBMessageHandler.h */,
-				35864FB2175C7AF900C14D4B /* RFBMessageHandler.m */,
-				35864FB3175C7AF900C14D4B /* rfbproto.h */,
-				35864FB4175C7AF900C14D4B /* RFBRawDecoder.h */,
-				35864FB5175C7AF900C14D4B /* RFBRawDecoder.m */,
-				35864FB6175C7AF900C14D4B /* RFBTightDecoder.h */,
-				35864FB7175C7AF900C14D4B /* RFBTightDecoder.m */,
-				35864FB8175C7AF900C14D4B /* ZlibInflater.h */,
-				35864FB9175C7AF900C14D4B /* ZlibInflater.m */,
-			);
-			path = protocol;
-			sourceTree = "<group>";
-		};
-		35864FBA175C7AF900C14D4B /* utilities */ = {
-			isa = PBXGroup;
-			children = (
-				35864FBB175C7AF900C14D4B /* d3des.c */,
-				35864FBC175C7AF900C14D4B /* d3des.h */,
-				35864FBD175C7AF900C14D4B /* KeyMap.h */,
-				35864FBE175C7AF900C14D4B /* KeyMap.m */,
-				35864FBF175C7AF900C14D4B /* keysymdef.h */,
-				35864FC0175C7AF900C14D4B /* Profiler.h */,
-				35864FC1175C7AF900C14D4B /* Profiler.m */,
-				35864FC2175C7AF900C14D4B /* Utility.h */,
-				35864FC3175C7AF900C14D4B /* Utility.m */,
-				35864FC4175C7AF900C14D4B /* vncauth.c */,
-				35864FC5175C7AF900C14D4B /* vncauth.h */,
-			);
-			path = utilities;
 			sourceTree = "<group>";
 		};
 		35864FC6175C7AF900C14D4B /* view */ = {
@@ -338,6 +155,7 @@
 				35864F6E175C7AF900C14D4B /* NPDesktop */,
 				35D7D41216DF4221000A60F5 /* Frameworks */,
 				35D7D41016DF4221000A60F5 /* Products */,
+				95BCBCA41FFFA788EA5F5922 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -362,8 +180,18 @@
 				35D7D41516DF4222000A60F5 /* Foundation.framework */,
 				35D7D41716DF4222000A60F5 /* CoreGraphics.framework */,
 				35D7D43716DF4222000A60F5 /* SenTestingKit.framework */,
+				2A1F1005B4D51DB81081DDF0 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95BCBCA41FFFA788EA5F5922 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C43F92DBEB77CC3BEC5AF554 /* Pods.debug.xcconfig */,
+				06BCDAE8D96CFA724EDBC128 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35D7D44816DF4222000A60F5 /* Build configuration list for PBXNativeTarget "NPDesktop" */;
 			buildPhases = (
+				A1E4A85D12BBE3E9D66B297D /* Check Pods Manifest.lock */,
 				35D7D40B16DF4221000A60F5 /* Sources */,
 				35D7D40C16DF4221000A60F5 /* Frameworks */,
 				35D7D40D16DF4221000A60F5 /* Resources */,
+				4F2D2AD4832A032A87A49685 /* Embed Pods Frameworks */,
+				F20950ADD34548D025265AA0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -434,39 +265,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F2D2AD4832A032A87A49685 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1E4A85D12BBE3E9D66B297D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F20950ADD34548D025265AA0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		35D7D40B16DF4221000A60F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35864FD3175C7AF900C14D4B /* GCDAsyncSocket.m in Sources */,
-				35864FD4175C7AF900C14D4B /* GCDAsyncUdpSocket.m in Sources */,
 				35864FD5175C7AF900C14D4B /* AppDelegate.m in Sources */,
-				35864FD6175C7AF900C14D4B /* RFBConnection.m in Sources */,
-				35864FD7175C7AF900C14D4B /* RFBFrameBuffer.m in Sources */,
-				35864FD8175C7AF900C14D4B /* RFBRect.m in Sources */,
-				35864FD9175C7AF900C14D4B /* RFBServerData.m in Sources */,
-				35864FDA175C7AF900C14D4B /* RFBServerManager.m in Sources */,
 				35864FE0175C7AF900C14D4B /* main.m in Sources */,
-				35864FEB175C7AF900C14D4B /* CompressLevelPseudoDecoder.m in Sources */,
-				35864FEC175C7AF900C14D4B /* JpegDecompressor.m in Sources */,
-				35864FED175C7AF900C14D4B /* QualityLevelPseudoDecoder.m in Sources */,
-				35864FEE175C7AF900C14D4B /* RFBCopyRectDecoder.m in Sources */,
-				35864FEF175C7AF900C14D4B /* RFBDecoder.m in Sources */,
-				35864FF0175C7AF900C14D4B /* RFBDecoderStore.m in Sources */,
-				35864FF1175C7AF900C14D4B /* RFBFbUpdateHandler.m in Sources */,
-				35864FF2175C7AF900C14D4B /* RFBHandler.m in Sources */,
-				35864FF3175C7AF900C14D4B /* RFBHandshaker.m in Sources */,
-				35864FF4175C7AF900C14D4B /* RFBInitializer.m in Sources */,
-				35864FF5175C7AF900C14D4B /* RFBMessageHandler.m in Sources */,
-				35864FF6175C7AF900C14D4B /* RFBRawDecoder.m in Sources */,
-				35864FF7175C7AF900C14D4B /* RFBTightDecoder.m in Sources */,
-				35864FF8175C7AF900C14D4B /* ZlibInflater.m in Sources */,
-				35864FF9175C7AF900C14D4B /* d3des.c in Sources */,
-				35864FFA175C7AF900C14D4B /* KeyMap.m in Sources */,
-				35864FFB175C7AF900C14D4B /* Profiler.m in Sources */,
-				35864FFC175C7AF900C14D4B /* Utility.m in Sources */,
-				35864FFD175C7AF900C14D4B /* vncauth.c in Sources */,
 				35864FFE175C7AF900C14D4B /* RFBScrollView.m in Sources */,
 				35864FFF175C7AF900C14D4B /* RFBView.m in Sources */,
 				35865000175C7AF900C14D4B /* RFBViewController.m in Sources */,
@@ -555,6 +408,7 @@
 		};
 		35D7D44916DF4222000A60F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C43F92DBEB77CC3BEC5AF554 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NPDesktop/NPDesktop-Prefix.pch";
@@ -570,6 +424,7 @@
 		};
 		35D7D44A16DF4222000A60F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06BCDAE8D96CFA724EDBC128 /* Pods.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NPDesktop/NPDesktop-Prefix.pch";

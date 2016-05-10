@@ -1,0 +1,26 @@
+PODS:
+  - CocoaAsyncSocket (7.4.3):
+    - CocoaAsyncSocket/All (= 7.4.3)
+  - CocoaAsyncSocket/All (7.4.3):
+    - CocoaAsyncSocket/GCD
+    - CocoaAsyncSocket/RunLoop
+  - CocoaAsyncSocket/GCD (7.4.3)
+  - CocoaAsyncSocket/RunLoop (7.4.3)
+  - DFJPEGTurbo (0.2.1)
+  - RFBConnection (0.1.1):
+    - CocoaAsyncSocket (~> 7.4.3)
+    - DFJPEGTurbo (~> 0.2.1)
+
+DEPENDENCIES:
+  - RFBConnection (from `./`)
+
+EXTERNAL SOURCES:
+  RFBConnection:
+    :path: ./
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
+  DFJPEGTurbo: 75de1669b9c0dc8fe94c61f9e8ea6e097672bf94
+  RFBConnection: b15fd65f233408adb9f802164288193d86cc36c6
+
+COCOAPODS: 0.39.0
